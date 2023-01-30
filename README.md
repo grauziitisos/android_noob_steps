@@ -12,3 +12,9 @@ So I did not have a clue they are right there ^^
 after reconnect the filter was applied normally and I saw the println result XD
 
 ![23-01-30_19-35_11_789_studio64_aa_–_FirstFragment kt_ aa app](https://user-images.githubusercontent.com/85872382/215555146-3777fede-3af8-47fe-a629-984e94218f0c.png)
+
+
+# actually quite nice to have so much **fun** here
+![image](https://user-images.githubusercontent.com/85872382/215559076-2a86dd35-3c87-4ae6-adcf-d3f1e2ad8799.png)
+
+![Screenshot_2023-01-30-20-03-26](https://user-images.githubusercontent.com/85872382/215559214-e6be3384-42fa-4d52-ab6c-74366aac9713.png)
