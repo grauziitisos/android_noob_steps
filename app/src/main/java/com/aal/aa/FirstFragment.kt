@@ -28,6 +28,13 @@ class FirstFragment : Fragment() {
 
     }
 
+    fun p(what: String){
+        //TODO: would be nice to dynamically add a scrollable (if needed @avaliable screen space)
+        //HACK: text
+        //FIXME: hmm why a hack-saw is not a key-word?
+        binding.textviewConsole.text = "${binding.textviewConsole.text}\n$what"
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -37,14 +44,18 @@ class FirstFragment : Fragment() {
         var school: String = "vidusskola"
         // update
         school = "RTU"
-        println("Hello  there at $school")
+//        println("Hello  there at $school")
+        p("Hello  there at $school")
         val a=5
         val b: Int =2
         var c=a*b
-        println("$a * $b == $c")
+        //println("$a * $b == $c")
+        p("$a * $b == $c")
         c++
         c+= 2
+//        lets leave this for the beautiful view of a nature scene sake
         println("c is now $c")
+        p("c is now $c")
         binding.textviewFirst.text = "nooo not the barbaristic bararians!!!!!!! Rome has fallen."
     }
 
