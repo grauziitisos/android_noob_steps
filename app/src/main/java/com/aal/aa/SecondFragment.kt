@@ -53,6 +53,8 @@ val s ="abs"
         // numberOfBooks?.dec()
         // numberOfBooks?.dec() ?: 0 (ja nav null tad liek dec() ja ir tad liek 0.
         p(Arrays.toString(pets))
+        var newPets = pets.toList().map{" new "+it}
+        newPets.forEach{ a: String -> println(a)}
         for (pet in pets) {
             p("Cool, I got a ${pet.trimEnd{it=='s'}} at home")
         }
