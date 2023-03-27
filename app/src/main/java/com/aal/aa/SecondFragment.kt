@@ -1,21 +1,27 @@
 package com.aal.aa
 
+import android.R
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.aal.aa.databinding.FragmentSecondBinding
 import java.util.*
+
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class SecondFragment : Fragment() {
-
+    private lateinit var extraCanvas: Canvas
+    private lateinit var extraBitmap: Bitmap
     private var _binding: FragmentSecondBinding? = null
-
+    private val backgroundColor = "#FFAADD"
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -29,12 +35,16 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        extraBitmap = Bitmap.createBitmap(200, 200, Bitmap.Config.ARGB_8888)
+        extraCanvas = Canvas(extraBitmap)
+        extraCanvas.drawColor(Color.parseColor("#FFAA5500"))
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
 
     }
+/*override*/ fun onDraw(canvas: Canvas){
 
+}
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
